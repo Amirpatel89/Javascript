@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<script>
+A constructor is a factory to make Javascript objects
+It is justa function that takes arguments and uses the JS keyword this to make the same thing over and over.
+
+The function name is captialized to indicate its a constructor.
+
+function Player(name,position,amp,ap,ar,starter){
+	this.name = name;
+	console.log(2+2)
+	this.position = position
+	this.avgMinutesPlayed =amp;
+	this.avgPoints = ap;
+	this.avgRebounds = ar;
+	this.starter = starter;
+}
+
+
+This = concept of "context"
+this in Javascript is the object(function or a constructor) that you are currently inside of. It is the equiv of python's "self"
+
+when you instantiate an object from a constructor function, you can use the keyword "new";
+
+var player1 = new Player('Kent Bazemore',SF', 31.8, 12, 6.6, true)
+console.log(player1);
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

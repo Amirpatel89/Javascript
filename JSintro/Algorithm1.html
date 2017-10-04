@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Algorithm1</title>
+
+
+<script>
+
+// function countSat(start, end){
+// 	if(end < start)return; 
+//     for(var count = {sat:0}; start < end; start.setDate(start.getDate() + 7)){
+//     if(start.getDay() == 0)count.sat++;
+//     }
+// 	return count;
+// }
+
+// countSat()
+
+
+// console.log(getDate)
+
+
+var myDate = "1701-01-01".split('-')
+var year = parseInt(myDate[0]);
+var month = parseInt(myDate[1])-1;
+var endDate = "1800-01-01".split('-')
+
+var saturdays = [];
+
+for (i = 0; i <= parseInt(endDate[0]) ; i++) 
+{    
+    var date = new Date(year, month, i);
+
+    if (date.getDay() == 6)
+    {
+       saturdays.push(date);
+    } 
+       
+    };
+
+console.log(saturdays);
+
+
+
+
+
+
+</script>	
+</head>
+<body>
+
+</body>
+</html>

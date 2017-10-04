@@ -1,0 +1,73 @@
+<!-- An array is [] -->
+<script>
+var students [];
+
+// An object is {}
+//this is an empty object!
+var student = {}
+
+
+Just like dictionaries, objects are a combination of properties and values(keys and values)
+syntax is: 
+{
+	property: value
+}
+// student['name'} = "Hayes"]- python way
+student.name= "hayes";
+console.log(student);
+
+student = {
+	name: "Hayes"
+}
+student.age = 28
+console.log(student);
+
+
+// multiple properties at definition, Seperate with a , 
+student2 = {
+	name: "Jennifer",
+	profession: "Student"
+	language: "Javascript"
+}
+
+
+console.log(student2.language)
+
+var student3 = {
+	name: "Akil",
+	friends: [
+	"Amir"
+	"binh", 
+	"Jong"
+	]
+}
+
+var student4 = {
+	name: "Valerie",
+	sayhello: function(name) {
+		console.log(`Hello, ${name}`)
+	}
+	addFriend: function(newFriendName){
+		this.friends.push(newFriendName)
+	}
+}
+console.log(student4.name);
+student4.sayHello("Eddie");
+
+BRACKET NOTATION
+if you need a variable property, you MUST use bracket notation.
+var userProp = prompt("What property would you like",name);
+
+// console.log(student4['name'])
+
+
+
+
+
+
+
+
+
+
+
+</script>

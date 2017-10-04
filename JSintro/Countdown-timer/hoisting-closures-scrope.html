@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+
+<script type="text/javascript">
+
+	// Scope
+	// -Determines what can see a variable.(Who can see it)
+	// GLOBAL:
+	// -If everyone can see it, it's global.
+	// -If it belongs to window, or is defined outside of all functions inside of a script tag, it is global. And everyone can see and change it anytime they want to.
+	// -In Python, globals are variables all the way to the left.
+	// LOCAL:
+	// -verying degrees
+	// -local variables occur insdie of functions and are visible and changeable only to that function and child functions.
+// Below is a global variable. It belongs to a "window"
+	// var iAmAGlobal = 1;
+	// console.log(iAmAGlobal);
+	// console.log(window.iAmAGlobal);
+
+	// function checkScope(){
+	// 	//inspite of the horrible name, this is NOT a global variable.
+	// 	var iAmAGlobal = 2;
+	// 	console.log(iAmAGlobal);
+	// 	variAmaLocal = 3
+	// }
+
+	// checkScope()
+	// console.log(iAmALocal);//wont print because outside of functon;
+	// var a =1;
+	// function child(){
+	// 	console.log(a);
+	// 	a++;
+	// 	console.log(a)
+	// }
+
+
+
+
+	// Hoisting
+
+	// Any time you have a function, Javascript will take any var and put it at the top, whether you want it to or not.
+	var q = 1;
+	function p(){
+		console.log(q)
+		var q = 2;
+		console.log(q)
+	}
+	p()
+	// Closures
+</script>	
+</head>
+<body>
+
+</body>
+</html>
